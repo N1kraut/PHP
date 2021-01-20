@@ -1,0 +1,157 @@
+html 
+{ 
+	overflow:  hidden; 
+}
+body
+{
+	z-index: 0;
+	background-image: url(img/Home_1.png);
+    background-size: 100%; 
+	
+	backdrop-filter: blur(4px); 
+	
+}
+#LogPass
+{
+	z-index: 1;
+	
+	position: absolute;
+    top: 50%;
+    left: 50%;
+   
+    transform: translate(-50%, -50%);
+	
+	width: 300px;
+	height: 450px;
+	border-radius: 15px;
+	
+	background: rgba(255, 255, 255,.4);
+		
+	
+}
+
+#LogPass img
+{	
+	position: relative;
+   
+	left: 50px;	
+	top: 5%;
+	
+	border-radius: 50%;
+	overflow: hidden;
+	
+	height: 200px;
+    width: auto;
+	
+}
+
+#LogPass img:hover
+{
+	animation: spin 3s linear 0s infinite;
+
+}
+
+@keyframes spin {
+    from 
+	{
+	
+		transform:rotate(0deg);
+	
+	}
+    to 
+	{
+		
+		transform:rotate(360deg);
+		
+	}
+	
+	
+	}
+	
+
+
+#LogPass input
+{
+	width: 90%;
+	height: 40px;
+	
+	
+	position: relative;
+	
+    left: 50%;
+	
+    transform: translate(-50%, -50%);
+	
+	display: block;
+	
+	outline: none;
+	border-radius: 25px;
+	border:none;
+	
+	color: white;
+	background: rgba(256,256, 256, .8);
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+   
+	color: Black;
+	text-align: center;
+   
+	font-size: 150%;
+}
+
+
+
+
+#LogPass input[name = "Login"]
+{
+	top: 15%;
+
+}
+
+#LogPass input[name = "Login"]:before
+{
+	top: 15%;
+	content: "Login";
+
+}
+#LogPass input[name = "Password"]
+{	
+	top: 17.5%; 
+}
+
+#LogPass input[type="submit"]
+{		
+	top: 25%;
+	background: rgba(0,0, 0, .8);
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	color: white;
+}
+#LogPass input[type="submit"]:hover
+{		
+	box-shadow:0 0 10px rgba(0,0,0,0.7);
+	
+	
+}
+
+#LogPass .in:focus
+{		
+	background: white;
+	
+	
+}
+#LogPass input[type="submit"]:active
+{		
+	background: white;
+	color:Black;
+	border-color:black;
+	
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
